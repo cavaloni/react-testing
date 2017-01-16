@@ -22,8 +22,8 @@ describe('Card component', function () {
     });
 });
 
-describe('Board component', function () { 
-    it('should display a board of cards', function () {  
+describe('list component', function () { 
+    it('should display a list of cards', function () {  
         const title = 'This title';
         const cards = ['eenie', 'meenie', 'minie'];
 
@@ -36,7 +36,7 @@ describe('Board component', function () {
         const testcards = result.props.children;
         cards.forEach((card) => {
             card.should.be.a('string');
-        })
-        
-    })
- })
+        });
+    });
+ });
+
